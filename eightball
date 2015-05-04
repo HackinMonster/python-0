@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+import colors as c 
+
+print(c.red + '''
+Welcome to the magic eight ball!
+Enter your question below.
+''' + c.reset)
+
+answers = [
+    
+    'My reply is no.',
+    'Of course not!',
+    'Yep.',
+    'I like trains!',
+    'Everybody do da flop!',
+    'Ask again later',
+    'Im busy eating potato chips!',
+    'My sources say nothing',
+    'Yes, only if you go jump off a cliff',
+    'Maybe you will stop asking me questions',
+    'What was that?',
+    'Im going to sleep',
+    'Ask my dad',
+    'Does it really look like i care?',
+    'It will happen some day'
+]
+import random
+while True:
+    question = input('>')
+    answer = random.choice(answers)
+    print(answer)
+
